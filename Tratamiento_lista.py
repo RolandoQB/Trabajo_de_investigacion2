@@ -9,7 +9,7 @@ class TratamientoListas():
     def PresentarLista(self):
         print("Recorrer y presentar los datos de una lista")
         for list in self.lista:
-            print(list)
+            print(list,end='   ')
         print() 
 
 #_____________________________________________________________________________________________        
@@ -134,11 +134,11 @@ class TratamientoListas():
  
 pos=2
 diccionario=[{'nombre':'Josue', 'nota':100},{'nombre':'Mario','nota':80},{'nombre':'Miguel','nota':90}]
-lista=["-2","-2","5","3","40","50"]
+lista=[-2,-2,5,3,40,50]
 tupla=(22,23,24,25)
 listaClientesDiccionarios=[{'cliente':'Josue','deuda':100},{'cliente':'Maria','deuda':80},{'cliente':'Ruth','deuda':50}]
 ord1= TratamientoListas(lista,diccionario,tupla)
-# ord1.PresentarLista()
+ord1.PresentarLista()
 #rd1.buscarLista(40)
 # ord1.ListaFactorial()
 # ord1.listaPrimo()
