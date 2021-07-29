@@ -12,19 +12,29 @@ class Cadena():
         
 #___________________________________________________________________________________________________________  
     def  buscarCaracter(self,buscado):
-        print(':::::::::::::::::::::::::::::::::::::')
+        print('::::::::::::::::::::::::::::::::::')
         print("Buscar un carácter en una cadena")
-        print(':::::::::::::::::::::::::::::::::::::')
+        print('::::::::::::::::::::::::::::::::::')
         acum=0
         for x,i in enumerate(self.cadena):
             if i== buscado:
                 acum=acum+1
         print("Su caracter se encuentra {} veces, dentro de la cadena".format(acum))
         print()
-        
 #___________________________________________________________________________________________________________  
     def  listaPosiciones(self,caracter):
-        pass
+        print('::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::')
+        print("Retornar una lista con la posiciones dado un carácter de la cadena")
+        print('::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::')
+        acum=0
+        aux=[]
+        for x,i in enumerate(self.cadena):
+            acum=acum+1
+            if i == caracter:
+                aux.append(acum)
+                lista=aux
+        print(lista)        
+                
 #___________________________________________________________________________________________________________  
     def listaPalabras(self):
         pass
@@ -48,4 +58,5 @@ class Cadena():
 cadena='hola como esta me miro y acercandose no lo podia creer'
 cad= Cadena(cadena)
 # cad.recorrerCadena()
-cad.buscarCaracter('b')
+#cad.buscarCaracter('b')
+cad.listaPosiciones('v')
