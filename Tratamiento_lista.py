@@ -155,7 +155,7 @@ ord1= TratamientoListas(lista)
 #ord1.buscarLista(40)
 # ord1.ListaFactorial()
 #ord1.listaPrimo()
-ord1.listaNotas(listaClientesDiccionarios)
+# ord1.listaNotas(listaClientesDiccionarios)
 # print(ord1.insertarLista(600,5))
 # print()
 # lista1 = []       
@@ -172,6 +172,16 @@ ord1.listaNotas(listaClientesDiccionarios)
 #     lista2.append(valor)
 # aux=lista2
 # print(ord1.retornaValorLista(aux))
-print(ord1.copiarTuplaLista())
-# ord1.vueltoLista(listaClientesDiccionarios)
+# print(ord1.copiarTuplaLista())
+diccionario={}
+lista=[]
+num=int(input("ingrese cuantos diccionarios desea ingresar: "))
+for x in range(num):
+    clave=(input("ingrese su clave para el diccionario: ")).capitalize()
+    valor=int(input("ingrese el valor de la clave para el diccionario: "))
+
+    diccionario[clave]=valor
+    lista.append(diccionario)
+    diccionario={} 
+ord1.vueltoLista(lista)
 
