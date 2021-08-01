@@ -112,7 +112,7 @@ class TratamientoListas():
     def retornaValorLista(self,lista):
         print(" Retornar cualquier valor de una lista eliminándolo ")
         print()
-        n=int(input("que valor quieres eliminar: "))      
+        n=int(input("Que valor quieres eliminar: "))      
         for x,i in enumerate(lista):
             if i == n:
                 del lista[x]  
@@ -122,7 +122,7 @@ class TratamientoListas():
     
     def copiarTuplaLista(self):
         print(" Copiar cada elemento de una tupla en una lista ")
-        aux1=list(self.tupla)
+        aux1=list(self.lista)
         return aux1      
 
 #_____________________________________________________________________________________________  
@@ -130,7 +130,7 @@ class TratamientoListas():
     def vueltoLista(self,listaClientesDiccionario):
         print(" Dar el vuelto a varios clientes ")
         pago=float(input("Ingrese pago del cliente: "))
-        nom=(input("ingrese nombre del cliente: ")).capitalize()
+        nom=(input("Ingrese nombre del cliente: ")).capitalize()
         print(nom)
         for x in listaClientesDiccionario:
             for clave, valor in x.items():     
@@ -147,16 +147,15 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
  
 
-diccionario=[{'nombre':'Josue', 'nota':100},{'nombre':'Mario','nota':80},{'nombre':'Miguel','nota':90}]
-lista=[1,2,3,4,5]
-tupla=(22,23,24,25)
+# lista=[1,2,3,4,5]
+lista=(22,23,24,25)
 listaClientesDiccionarios=[{'Josue':100},{'Maria':80},{'Ruth':50}]
 ord1= TratamientoListas(lista)
 #ord1.PresentarLista()
 #ord1.buscarLista(40)
 # ord1.ListaFactorial()
 #ord1.listaPrimo()
-ord1.listaNotas(diccionario)
+ord1.listaNotas(listaClientesDiccionarios)
 # print(ord1.insertarLista(600,5))
 # print()
 # lista1 = []       
@@ -173,6 +172,6 @@ ord1.listaNotas(diccionario)
 #     lista2.append(valor)
 # aux=lista2
 # print(ord1.retornaValorLista(aux))
-#print(ord1.copiarTuplaLista())
-ord1.vueltoLista(listaClientesDiccionarios)
+print(ord1.copiarTuplaLista())
+# ord1.vueltoLista(listaClientesDiccionarios)
 
