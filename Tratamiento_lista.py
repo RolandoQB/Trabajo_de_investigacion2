@@ -59,6 +59,7 @@ class TratamientoListas():
         print("lista de numeros Primos: ")    
         print(listaprimo)
         
+        
 
 #_____________________________________________________________________________________________  
     
