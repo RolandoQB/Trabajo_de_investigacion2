@@ -59,4 +59,4 @@ cadena='hola como esta me miro y acercandose no lo podia creer'
 cad= Cadena(cadena)
 # cad.recorrerCadena()
 #cad.buscarCaracter('b')
-cad.listaPosiciones('v')
+cad.listaPosiciones('p')
