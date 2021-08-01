@@ -1,9 +1,8 @@
 class TratamientoListas():
     
-    def __init__(self,lista,diccionario,tupla):
+    def __init__(self,lista):
         self.lista=lista
-        self.diccionario=diccionario
-        self.tupla=tupla
+        
 #_____________________________________________________________________________________________
 
     def PresentarLista(self):
@@ -22,7 +21,7 @@ class TratamientoListas():
                 enc=True
                 break
         if enc==True:
-           print("Su valor si se encuentra en la lista, se encuentra en la posicion: {}".format(pos))
+           print("Su valor si se encuentra en la lista, se encuentra en la posicion: {}".format(pos+1))
         else:
             print("Su valor no se encuentra en la lista")
 
@@ -42,6 +41,7 @@ class TratamientoListas():
     
     def listaPrimo(self):
         print("Retornar una lista de números primos")
+        listaprimo=[]
         for pos,i in enumerate(self.lista): 
             if i >= 0:
                 primo=True
@@ -52,12 +52,13 @@ class TratamientoListas():
                         primo+=1
                     divisor+=1
                 if primo ==True:
-                    print("Numero",i,"es primo")
-                else:
-                    print("Numero",i,"no es primo")
+                    listaprimo.append(i)
             else:
-                print("Su lista contiene numeros y letras")    
+                print("Su nmumero es negativo ")
         print()
+        print("lista de numeros Primos: ")    
+        print(listaprimo)
+        
 
 #_____________________________________________________________________________________________  
     
@@ -127,21 +128,26 @@ class TratamientoListas():
     
     def vueltoLista(self,listaClientesDiccionario):
         print(" Dar el vuelto a varios clientes ")
-        pass
+        for key in listaClientesDiccionario:
+            print("------")
+            print(key,':',listaClientesDiccionario[key])
+        
+
+       
         
         
 #_____________________________________________________________________________________________  
  
 pos=2
 diccionario=[{'nombre':'Josue', 'nota':100},{'nombre':'Mario','nota':80},{'nombre':'Miguel','nota':90}]
-lista=[-2,-2,5,3,40,50]
+lista=[0,-2,5,3,40,50]
 tupla=(22,23,24,25)
 listaClientesDiccionarios=[{'cliente':'Josue','deuda':100},{'cliente':'Maria','deuda':80},{'cliente':'Ruth','deuda':50}]
-ord1= TratamientoListas(lista,diccionario,tupla)
-ord1.PresentarLista()
-#rd1.buscarLista(40)
+ord1= TratamientoListas(lista)
+#ord1.PresentarLista()
+#ord1.buscarLista(40)
 # ord1.ListaFactorial()
-# ord1.listaPrimo()
+ord1.listaPrimo()
 # ord1.listaNotas(diccionario)
 # print(ord1.insertarLista(600,5))
 # print()
@@ -160,5 +166,5 @@ ord1.PresentarLista()
 # aux=lista2
 # print(ord1.retornaValorLista(aux))
 #print(ord1.copiarTuplaLista())
-#print(ord1.vueltoLista(listaClientesDiccionarios))
+#ord1.vueltoLista(listaClientesDiccionarios)
 
