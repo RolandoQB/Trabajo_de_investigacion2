@@ -129,7 +129,6 @@ class TratamientoListas():
     
     def vueltoLista(self,listaClientesDiccionario):
         print(" Dar el vuelto a varios clientes ")
-        cam1=[]
         pago=float(input("Ingrese pago del cliente: "))
         nom=(input("ingrese nombre del cliente: ")).capitalize()
         print(nom)
