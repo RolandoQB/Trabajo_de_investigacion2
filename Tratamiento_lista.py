@@ -58,7 +58,7 @@ class TratamientoListas():
         print()
         print("lista de numeros Primos: ")    
         print(listaprimo)
-        
+
         
 
 #_____________________________________________________________________________________________  
@@ -129,27 +129,35 @@ class TratamientoListas():
     
     def vueltoLista(self,listaClientesDiccionario):
         print(" Dar el vuelto a varios clientes ")
-        for key in listaClientesDiccionario:
-            print("------")
-            print(key,':',listaClientesDiccionario[key])
-        
-
-       
-        
-        
+        cam1=[]
+        pago=float(input("Ingrese pago del cliente: "))
+        nom=(input("ingrese nombre del cliente: ")).capitalize()
+        print(nom)
+        for x in listaClientesDiccionario:
+            for clave, valor in x.items():     
+                if clave == nom:
+                    if valor > 0:
+                        cambio=pago-valor
+                        print(cambio)
+                    else:
+                        cambio=pago
+        if cambio <= -1:                
+            print(" Mantiene una deuda de:",cambio,"$ con nosotros")
+        else:
+            print("su cambio es: ",cambio, "$ no tiene deuda con nosotros")  
 #_____________________________________________________________________________________________  
  
-pos=2
+
 diccionario=[{'nombre':'Josue', 'nota':100},{'nombre':'Mario','nota':80},{'nombre':'Miguel','nota':90}]
-lista=[0,-2,5,3,40,50]
+lista=[1,2,3,4,5]
 tupla=(22,23,24,25)
-listaClientesDiccionarios=[{'cliente':'Josue','deuda':100},{'cliente':'Maria','deuda':80},{'cliente':'Ruth','deuda':50}]
+listaClientesDiccionarios=[{'Josue':100},{'Maria':80},{'Ruth':50}]
 ord1= TratamientoListas(lista)
 #ord1.PresentarLista()
 #ord1.buscarLista(40)
 # ord1.ListaFactorial()
-ord1.listaPrimo()
-# ord1.listaNotas(diccionario)
+#ord1.listaPrimo()
+ord1.listaNotas(diccionario)
 # print(ord1.insertarLista(600,5))
 # print()
 # lista1 = []       
@@ -167,5 +175,5 @@ ord1.listaPrimo()
 # aux=lista2
 # print(ord1.retornaValorLista(aux))
 #print(ord1.copiarTuplaLista())
-#ord1.vueltoLista(listaClientesDiccionarios)
+ord1.vueltoLista(listaClientesDiccionarios)
 
