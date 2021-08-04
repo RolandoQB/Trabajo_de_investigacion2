@@ -2,7 +2,6 @@ class TratamientoListas():
     
     def __init__(self,lista):
         self.lista=lista
-        
 #_____________________________________________________________________________________________
 
     def PresentarLista(self):
@@ -148,9 +147,9 @@ class TratamientoListas():
  
 
 # lista=[1,2,3,4,5]
-lista=(22,23,24,25)
-listaClientesDiccionarios=[{'Josue':100},{'Maria':80},{'Ruth':50}]
-ord1= TratamientoListas(lista)
+# lista=(22,23,24,25)
+# listaClientesDiccionarios=[{'Josue':100},{'Maria':80},{'Ruth':50}]
+# ord1= TratamientoListas(lista)
 #ord1.PresentarLista()
 #ord1.buscarLista(40)
 # ord1.ListaFactorial()
@@ -173,15 +172,15 @@ ord1= TratamientoListas(lista)
 # aux=lista2
 # print(ord1.retornaValorLista(aux))
 # print(ord1.copiarTuplaLista())
-diccionario={}
-lista=[]
-num=int(input("ingrese cuantos diccionarios desea ingresar: "))
-for x in range(num):
-    clave=(input("ingrese su clave para el diccionario: ")).capitalize()
-    valor=int(input("ingrese el valor de la clave para el diccionario: "))
+# diccionario={}
+# lista=[]
+# num=int(input("ingrese cuantos diccionarios desea ingresar: "))
+# for x in range(num):
+#     clave=(input("ingrese su clave para el diccionario: ")).capitalize()
+#     valor=int(input("ingrese el valor de la clave para el diccionario: "))
 
-    diccionario[clave]=valor
-    lista.append(diccionario)
-    diccionario={} 
-ord1.vueltoLista(lista)
+#     diccionario[clave]=valor
+#     lista.append(diccionario)
+#     diccionario={} 
+# ord1.vueltoLista(lista)
 
