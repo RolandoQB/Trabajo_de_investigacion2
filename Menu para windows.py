@@ -2,7 +2,7 @@ import os
 from typing import Text
 from Calculadora import CalEstandar, calCientifica
 from Operacion_Numeros import Basico, Intermedio
-from Tratamiento_listas import TratamientoListas
+from Tratamiento_lista import TratamientoListas
 from Operacion_de_Cadenas import Cadena
 
 class Menu:
