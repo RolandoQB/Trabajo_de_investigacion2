@@ -5,7 +5,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________
 
     def PresentarLista(self):
-        print("Recorrer y presentar los datos de una lista")
+        print("—(••÷ Recorrer y presentar los datos de una lista ÷••)—")
         for list in self.lista:
             print(list,end='   ')
         print() 
@@ -13,7 +13,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________        
     
     def buscarLista(self,buscado):
-        print("Buscar un valor en una lista")
+        print("—(••÷ Buscar un valor en una lista ÷••)—")
         enc=False
         for pos,ele in enumerate(self.lista):
             if ele==buscado:
@@ -27,7 +27,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def ListaFactorial(self):
-        print("Retornar una lista con los factoriales")
+        print("—(••÷ Retornar una lista con los factoriales ÷••)—")
         for pos,i in enumerate(self.lista): 
             if i >= 0:
                 acu=1
@@ -39,7 +39,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def listaPrimo(self):
-        print("Retornar una lista de números primos")
+        print("—(••÷ Retornar una lista de números primos ÷••)—")
         listaprimo=[]
         for pos,i in enumerate(self.lista): 
             if i >= 0:
@@ -63,7 +63,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def listaNotas(self,listaNotasDicccionario):
-        print("Recorrer una lista de diccionario con notas de alumnos")
+        print("—(••÷ Recorrer una lista de diccionario con notas de alumnos ÷••)—")
         for nom in listaNotasDicccionario:
             for clave,valor in nom.items():
                 print(clave,":",valor,end="  ")
@@ -72,7 +72,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def insertarLista(self,valor,posicion):
-        print("Insertar un dato en una Lista dada la Posición")
+        print("—(••÷ Insertar un dato en una Lista dada la Posición ÷••)—")
         print()
         auxlista=[]        
         for pos,ele in enumerate(self.lista):
@@ -90,7 +90,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def eliminarLista(self,lista):
-        print("Eliminar todas las ocurrencias en una Lista")
+        print(" —(••÷ Eliminar todas las ocurrencias en una Lista ÷••)—")
         print()
         lista2 = {}
         for i in lista:
@@ -109,7 +109,7 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def retornaValorLista(self,lista):
-        print(" Retornar cualquier valor de una lista eliminándolo ")
+        print("—(••÷ Retornar cualquier valor de una lista eliminándolo ÷••)— ")
         print()
         n=int(input("Que valor quieres eliminar: "))      
         for x,i in enumerate(lista):
@@ -120,14 +120,14 @@ class TratamientoListas():
 #_____________________________________________________________________________________________  
     
     def copiarTuplaLista(self):
-        print(" Copiar cada elemento de una tupla en una lista ")
+        print("—(••÷ Copiar cada elemento de una tupla en una lista ÷••)—")
         aux1=list(self.lista)
         return aux1      
 
 #_____________________________________________________________________________________________  
     
     def vueltoLista(self,listaClientesDiccionario):
-        print(" Dar el vuelto a varios clientes ")
+        print("—(••÷ Dar el vuelto a varios clientes ÷••)— ")
         pago=float(input("Ingrese pago del cliente: "))
         nom=(input("Ingrese nombre del cliente: ")).capitalize()
         print(nom)
