@@ -220,9 +220,9 @@ while opc != "5":
                 for i in range(num):
                     valor = int(input("Ingrese el elemento:")) 
                     lista.append(valor)
-                aux=lista
                 resultado = TratamientoListas(lista)
                 resultado.ListaFactorial()
+                input("Presione una tecla para continuar...")
                 
             elif opc3 == "4":
                 os.system("cls")
@@ -235,6 +235,7 @@ while opc != "5":
                 aux=lista
                 resultado = TratamientoListas(lista)
                 resultado.listaPrimo()
+                input("Presione una tecla para continuar...")
                 
             elif opc3 == "5":
                 os.system("cls")
@@ -242,6 +243,7 @@ while opc != "5":
                 diccionario=[{'nombre':'Josue', 'nota':100},{'nombre':'Mario','nota':80},{'nombre':'Miguel','nota':90}]
                 resultado = TratamientoListas(diccionario)
                 resultado.listaNotas()
+                input("Presione una tecla para continuar...")
                 
             elif opc3 == "6":
                 os.system("cls")
@@ -256,6 +258,7 @@ while opc != "5":
                 val = int(input("Ingrese la posicion en la que se insertara el elemento:"))
                 resultado = TratamientoListas(lista)
                 resultado.insertarLista(ele,val-1)
+                input("Presione una tecla para continuar...")
                 
             elif opc3 == "7":
                 os.system("cls")
@@ -268,6 +271,7 @@ while opc != "5":
                 aux=lista
                 resultado = TratamientoListas(lista)
                 resultado.eliminarLista()
+                input("Presione una tecla para continuar...")
                 
             elif opc3 == "8":
                 os.system("cls")
@@ -280,13 +284,15 @@ while opc != "5":
                 aux=lista
                 resultado = TratamientoListas(lista)
                 resultado.retornaValorLista()
-                
+                input("Presione una tecla para continuar...")
+
             elif opc3 == "9":
                 os.system("cls")
                 print("░░░░░░░░░░Copiar tupla░░░░░░░░░░")
                 tupla = (2,2,3,4,5,6,7)
                 resultado = TratamientoListas(tupla)
                 print(resultado.copiarTuplaLista())
+                input("Presione una tecla para continuar...")
                 
             elif opc3 == "10":
                 os.system("cls")
@@ -303,6 +309,7 @@ while opc != "5":
                     diccionario={}
                 resultado = TratamientoListas(diccionario)
                 resultado.vueltoLista(lista)
+                input("Presione una tecla para continuar...")
                 
 
     elif opc == "4":
